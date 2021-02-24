@@ -1,0 +1,219 @@
+/* Theme Color: #49A3BF */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+footer {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+}
+
+.page, .page-content, .panel-container, .stock-panel,
+.stock-info-panel, .logo-price, .stock-info, .stock-header,
+.stock-data, .stock-news-panel, .news-article, .headline-summary,
+.search-panel, .stock-lookup, .stock-lookup-header {
+
+    display: flex;
+
+}
+
+.page {
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+}
+
+.page-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-head {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-head img{
+    width: 100%;
+}
+
+/******************* PANELS ******************/
+
+.panel-container {
+    flex-direction: column;
+    width: 100%;
+    background-color: #eee;
+}
+
+.stock-panel {
+    flex-direction: column;
+}
+
+.stock-info-panel {
+    padding: 20px;
+    background-color: white;
+    margin: 10px 0 0;
+}
+
+.stock-news-panel {
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0 0;
+}
+
+.stock-news-panel a {
+    text-decoration: none;
+    color: black;
+}
+
+.stock-news-panel a:hover {
+    background-color: #49A3BF;
+}
+
+.search-panel {
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0 0;
+}
+
+/***************STOCK PANEL****************/
+
+.logo-price {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-price img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.stock-info {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.stock-header {
+    justify-content: space-between;
+    border-bottom: 2px #444 solid;
+}
+
+/***********NEWS ARTICLES*************/
+
+.news-article:last-child {
+    border-bottom: none;
+}
+
+.news-article {
+    width: 100%;
+    border-bottom: 2px #444 solid;
+    padding: 20px 10px;
+}
+
+.article-image img{
+    width: 100px;
+}
+
+.headline-summary {
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+/************STOCK DATA************/
+
+.stock-data {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stock-data-item {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/********************* SEARCH PANEL ***********/
+
+.search-panel form {
+    padding: 20px;
+    background-color: #49A3BF;
+}
+
+.search-panel form input {
+    font-size: 20px;
+    padding: 5px;
+    width: 63%;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+.search-panel form button {
+    font-size: 20px;
+    padding: 5px;
+    width: 35%;
+    border-radius: 10px;
+    border: none;
+}
+
+.stock-lookup {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px #444 solid;
+}
+
+.stock-lookup:hover {
+    background-color: #49A3BF;
+    cursor: pointer;
+}
+
+.stock-lookup-header {
+    flex-direction: column;
+    padding: 20px;
+    width: 33%;
+}
+
+/******************* RESPONSIVE DESIGN ******************/
+
+@media only screen and (min-width: 500px) {
+    .logo-head img {
+        width: 450px;
+    }
+
+    .page-content {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .page-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .panel-container {
+        flex-direction: row;
+    }
+
+    .stock-panel {
+        width: 45%;
+        margin-right: 30px;
+    }
+}
