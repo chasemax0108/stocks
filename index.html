@@ -18,112 +18,22 @@
             </div>
             <div class="page-content">
                 <div class="panel-container">
-                    <div class="stock-panel">
+                    <div class="stock-panel" id="stock-panel">
                         <div class="stock-info-panel">
-                            <div class="logo-price">
-                                <img src="images/practice thing.png">
-                                <h2>40.00</h2>
-                            </div>
-                            <div class="stock-info">
-                                <div class="stock-header">
-                                    <h1>AAPL</h1>
-                                    <h2>Apple, inc.</h2>
-                                </div>
-                                <div class="stock-data">
-                                    <div class="stock-data-item">
-                                        <p>High: 40.50</p>
-                                    </div>
-                                    <div class="stock-data-item">
-                                        <p>Low: 39.50</p>
-                                    </div>
-                                    <div class="stock-data-item">
-                                        <p>P/E Ratio: 50</p>
-                                    </div>
-                                    <div class="stock-data-item">
-                                        <p>Market Cap: 298349872</p>
-                                    </div>
-                                    <div class="stock-data-item">
-                                        <p>Dividend Yield: .021</p>
-                                    </div>
-                                    <div class="stock-data-item">
-                                        <p>52-week change: 58.80</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="stock-news-panel">
-                            <a class="news-article" href="http://soundcloud.com/djcmax" target="_blank">
-                                <div class="article-image">
-                                    <img src="images/practice thing.png">
-                                </div>
-                                <div class="headline-summary">
-                                    <h2>APPLE BUYS OUT GOOGLE</h2>
-                                    <p>Google says "it was a great deal!"</p>
-                                </div>
-                            </a>
+                            <h1>No Stock Selected</h1>
                         </div>
                     </div>
-                    <div class="search-panel">
+                    <div class="search-panel" id="search-results">
                         <form>
-                            <input type="text" placeholder="Search Stocks...">
-                            <button>Search</button>
+                            <input type="text" placeholder="Search Stocks..." id="search-field">
+                            <button id="search-button">Search</button>
                         </form>
-                        <div class="stock-lookup">
-                            <div class="stock-lookup-header">
-                                <h2>APPL</h2>
-                                <h3>Apple, inc.</h3>
-                            </div>
-                            <div class="stock-data">
-                                <div class="stock-data-item">
-                                    <p>High: 40.50</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>Low: 39.50</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>P/E Ratio: 50</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>Market Cap: 298349872</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>Dividend Yield: .021</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>52-week change: 58.80</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="stock-lookup">
-                            <div class="stock-lookup-header">
-                                <h2>APPL</h2>
-                                <h3>Apple, inc.</h3>
-                            </div>
-                            <div class="stock-data">
-                                <div class="stock-data-item">
-                                    <p>High: 40.50</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>Low: 39.50</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>P/E Ratio: 50</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>Market Cap: 298349872</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>Dividend Yield: .021</p>
-                                </div>
-                                <div class="stock-data-item">
-                                    <p>52-week change: 58.80</p>
-                                </div>
-                            </div>
-                        </div>
+                        <h1 class="stock-lookup">Search for a stock by name or symbol</h1>
                     </div>
                 </div>
                 <footer>Find the code for this page on <a href="https://github.com/chasemax0108/stocks">Github</a></footer>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

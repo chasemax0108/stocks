@@ -187,7 +187,15 @@ h1, h2, h3 {
 .stock-lookup-header {
     flex-direction: column;
     padding: 20px;
-    width: 33%;
+    width: 40%;
+}
+
+.stock-lookup .stock-data {
+    width: 60%;
+}
+
+.search-panel h1 {
+    padding: 20px;
 }
 
 /******************* RESPONSIVE DESIGN ******************/
@@ -215,5 +223,9 @@ h1, h2, h3 {
     .stock-panel {
         width: 45%;
         margin-right: 30px;
+    }
+
+    .search-panel {
+        width: 55%;
     }
 }
